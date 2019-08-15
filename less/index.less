@@ -6,6 +6,16 @@
 @backgroundcolor:#906946;
 @fontsize:'Roboto Condensed', sans-serif;
 
+.elimixins{
+	background-color: @backgroundcolor;
+	color:white;
+}
+
+.eliflex{
+	display: flex;
+	justify-content: center;
+}
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -83,16 +93,24 @@ nav{
 	justify-content: space-around;
 	text-align: center;
 	height: 50px;
-	
-	background-color:@backgroundcolor;
+	.elimixins();
+	// background-color:@backgroundcolor;
 	align-items: center;
+
+
+	@media(max-width:500px){
+		display: flex;
+		flex-direction: column;
+		height: 100px;
+	}
 		
 }
 
 nav a{
 	text-decoration: none;
-	color:white;
+	// color:white;
 	font-family:@fontsize ;
+	.elimixins();
 }
 
 .One{
@@ -108,33 +126,135 @@ nav a{
 	justify-content: space-around;
 	align-items: center;
 	padding: 10px 10px;
-}
+	font-family: @fontsize;
 
- .me{
-	 margin-right:100px;
-	 color:white;
-	 
+	@media(max-width:500px){
+		display: flex;
+		flex-direction: column-reverse;
+	}
+
+	.One{
+		@media(max-width:500px){
+			
+
+		}
+
+	}
+
+	.me{
+		// margin-right:100px;
+		color:white;
+
+		@media(max-width:500px){
+			justify-content: center;
+			margin-left:50px;
+			margin-bottom: 50px;
+		}
+}
 
 }
 
 .about-me{
-
-	display:flex;
-	justify-content: center;
+	.eliflex();
+	// display:flex;
+	// justify-content: center;
 	align-items: center;
-	background-color: @backgroundcolor;
-
+	// background-color: @backgroundcolor;
+	.elimixins();
 	.Am-I{
 		padding:30px;
 		width:300px;
-		color:white;
+		// color:white;
 		font-family: @fontsize;
+
+		h2{
+			font-size:50px;
+		}
 	}
 
 
 }
 
+.skills{
+	font-family:@fontsize;
+	// color:white;
+	.eliflex();
+	// display: flex;
+	// justify-content: center;
+	align-items: center;
+	padding:50px;
+	
+
+
+	@media(max-width:500px){
+
+		flex-direction: column;
+	
+	}
+}
+	.skills1{
+
+
+		width:400px;
+		height: 200px;
+		margin-top:20px;
+		// background-color:@backgroundcolor;
+		.eliflex();
+		// display: flex;
+		// justify-content:center;
+		.elimixins();
+
+		@media(max-width:500px){
+
+			font-size:30px;
+		
+		}
+
+			
+				
+				}
+		
+		
+
+			
+
+
+	.work{
+		width:400px;
+		height: 200px;
+		margin-top:20px;
+		// background-color:@backgroundcolor;
+		.eliflex();
+		// display: flex;
+		// justify-content: center;
+		.elimixins();
+
+
+		@media(max-width:500px){
+
+			font-size:30px;
+		
+		}
+		// 	h2{
+		// 	text-align: center;
+		// }
+
+		// div{
+		// 	display: 
+		// 	justify-content: center;
+		// }
+		
+	}
+
+
+
 footer{
 
 	background-color: @backgroundcolor;
+	color:white;
+
+	h3{
+		padding:20px;
+	}
 }
+

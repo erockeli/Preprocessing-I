@@ -2,6 +2,14 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+.elimixins {
+  background-color: #906946;
+  color: white;
+}
+.eliflex {
+  display: flex;
+  justify-content: center;
+}
 html,
 body,
 div,
@@ -154,12 +162,21 @@ nav {
   text-align: center;
   height: 50px;
   background-color: #906946;
+  color: white;
   align-items: center;
+}
+@media (max-width: 500px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+  }
 }
 nav a {
   text-decoration: none;
-  color: white;
   font-family: 'Roboto Condensed', sans-serif;
+  background-color: #906946;
+  color: white;
 }
 .One {
   width: 400px;
@@ -172,23 +189,83 @@ nav a {
   justify-content: space-around;
   align-items: center;
   padding: 10px 10px;
+  font-family: 'Roboto Condensed', sans-serif;
 }
-.me {
-  margin-right: 100px;
+@media (max-width: 500px) {
+  .header {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+.header .me {
   color: white;
+}
+@media (max-width: 500px) {
+  .header .me {
+    justify-content: center;
+    margin-left: 50px;
+    margin-bottom: 50px;
+  }
 }
 .about-me {
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #906946;
+  color: white;
 }
 .about-me .Am-I {
   padding: 30px;
   width: 300px;
-  color: white;
   font-family: 'Roboto Condensed', sans-serif;
+}
+.about-me .Am-I h2 {
+  font-size: 50px;
+}
+.skills {
+  font-family: 'Roboto Condensed', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+@media (max-width: 500px) {
+  .skills {
+    flex-direction: column;
+  }
+}
+.skills1 {
+  width: 400px;
+  height: 200px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  background-color: #906946;
+  color: white;
+}
+@media (max-width: 500px) {
+  .skills1 {
+    font-size: 30px;
+  }
+}
+.work {
+  width: 400px;
+  height: 200px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  background-color: #906946;
+  color: white;
+}
+@media (max-width: 500px) {
+  .work {
+    font-size: 30px;
+  }
 }
 footer {
   background-color: #906946;
+  color: white;
+}
+footer h3 {
+  padding: 20px;
 }
